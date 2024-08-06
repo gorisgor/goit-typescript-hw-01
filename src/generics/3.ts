@@ -4,6 +4,6 @@
 //   return Object.assign(objA, objB);
 // }
 
-function merge (objA, objB) {
-    return Object.assign(objA, objB);
+export function merge <Type1, Type2> (objA: Type1, objB: Type2): Type1 & Type2 {
+    return Object.assign({}, objA, objB);
   }
