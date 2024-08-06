@@ -11,7 +11,7 @@
 // const isWeekend = (day) => {
 // }
 
-enum DayOfWeek {
+export enum DayOfWeek {
       Monday,
       Tuesday,
       Wednesday,
@@ -21,5 +21,12 @@ enum DayOfWeek {
       Sunday
     }
 
- export const isWeekend = (day: DayOfWeek): any => {
-        }
+    export const isWeekend = (day: DayOfWeek): boolean => {
+      switch (day) {
+        case DayOfWeek.Saturday:
+        case DayOfWeek.Sunday:
+          return true;
+        default:
+          return false;
+      }
+    }

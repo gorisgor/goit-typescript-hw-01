@@ -21,24 +21,22 @@ try {
   console.error('task4 Error:', error);
 }
 
-import { isWeekend } from './basic/5';
-
-
+import { isWeekend, DayOfWeek } from './basic/5';
+const day = DayOfWeek.Monday
+const res = isWeekend(day)
+console.log('task5',`Is ${DayOfWeek[day]} a weekend? ${res}`)
 
 import { mango, poly } from './basic/6';
 console.log('task6', mango);
 console.log('task6', poly);
 
-
-
-
-
-
+import { page1, page2 } from './basic/7'
+console.log('task7', page1);
+console.log('task7', page2);
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-       
+  <div>  
     <h1>Vite + TypeScript</h1>
-    
+    <h2>TS Homework 1</h2>
   </div>
 `
