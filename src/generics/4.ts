@@ -14,13 +14,13 @@
 //   password: 'password123' 
 // });
 
-type User = {
+export type User = {
     name: string;
     surname: string;
     email: string;
     password: string;
   }
-function createOrUpdateUser(initialValues: Partial<User>) {
+export function createOrUpdateUser(initialValues: Partial<User>) {
     // Оновлення користувача
   }
   createOrUpdateUser({ 
