@@ -21,9 +21,6 @@ export type User = {
     password: string;
   }
 export function createOrUpdateUser(initialValues: Partial<User>) {
-    // Оновлення користувача
+  console.log('task4', initialValues); 
+  // Оновлення користувача
   }
-  createOrUpdateUser({ 
-    email: 'user@mail.com', 
-    password: 'password123' 
-  });

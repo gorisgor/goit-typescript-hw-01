@@ -1,4 +1,6 @@
 /////////////////////////////// basic
+console.log('//////////basic////////////');
+
 // Task 1
 import { age, username, toggle, empty, callback } from './basic/1'
 console.log('task1', age);
@@ -37,6 +39,8 @@ console.log('task7', page1);
 console.log('task7', page2);
 
 /////////////////////////////// generics
+console.log('////////////generics/////////////');
+
 // Task 1
 import {fetchData} from './generics/1'
 async function getData (){
@@ -67,6 +71,12 @@ const details = {
 const newUser = merge(name, details)
 console.log('task3',newUser);
 // Task 4
+import { createOrUpdateUser, User } from './generics/4';
+const updatedUserData: Partial<User> = { 
+  email: 'user@mail.com', 
+  password: 'password123', 
+};
+createOrUpdateUser(updatedUserData);
 // Task 5
 import { RoleDescription, UserRole } from './generics/5';
 console.log('task5', RoleDescription[UserRole.admin]);
