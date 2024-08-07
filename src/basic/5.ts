@@ -22,11 +22,5 @@ export enum DayOfWeek {
     }
 
     export const isWeekend = (day: DayOfWeek): boolean => {
-      switch (day) {
-        case DayOfWeek.Saturday:
-        case DayOfWeek.Sunday:
-          return true;
-        default:
-          return false;
-      }
+      return day === DayOfWeek.Saturday || day === DayOfWeek.Sunday;
     }
