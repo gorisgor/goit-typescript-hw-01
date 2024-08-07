@@ -72,11 +72,11 @@ const newUser = merge(name, details)
 console.log('task3',newUser);
 // Task 4
 import { createOrUpdateUser, User } from './generics/4';
-const updatedUserData: Partial<User> = { 
+const newData: Partial<User> = { 
   email: 'user@mail.com', 
   password: 'password123', 
 };
-createOrUpdateUser(updatedUserData);
+createOrUpdateUser(newData);
 // Task 5
 import { RoleDescription, UserRole } from './generics/5';
 console.log('task5', RoleDescription[UserRole.admin]);
